@@ -1,4 +1,8 @@
-﻿[Rule]
+#!name= Bilibili 去广告
+#!icon= https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Color/Bilibili.png
+
+﻿
+[Rule]
 DOMAIN-SUFFIX,cm.bilibili.com,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
