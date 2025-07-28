@@ -1,0 +1,12 @@
+#!name = 广告拦截合集
+#!desc = 针对部分APP和小程序广告进行拦截，某些APP要清除缓存或者重新安装拦截广告才会生效！
+
+[Argument]
+aisi_ad_script = switch, true, false, tag = 爱思去开屏广告
+
+[Rewrite]
+# 爱思去除开屏广告（支持开关）
+^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject argument=aisi_ad_script
+
+[MITM]
+hostname = list-app-m.i4.cn
