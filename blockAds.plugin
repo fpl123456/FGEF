@@ -22,7 +22,7 @@ http-response ^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/
 http-response ^https:\/\/app-v1\.ecoliving168\.com\/api\/v1\/movie\/index_recommend\? script-path = https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/dianyinglieshou.js, requires-body = true, timeout = 60, tag = [广告拦截合集]555电影, enable={555dy_script}
 
 # 爱思去除开屏广告
-http-response ^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject  requires-body = true, tag = [广告拦截]爱思去开屏广告, enable={aisi_ad}
+http-response ^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject  requires-body = true, tag = [广告拦截合集]爱思去开屏广告, enable={aisi_ad}
 
 
 [MITM]
