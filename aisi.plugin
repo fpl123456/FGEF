@@ -1,5 +1,5 @@
 #!name = 爱思开屏广告
-#!desc = https://aisi-ck.com/style/nb_logo.png
+#!icon = https://aisi-ck.com/style/nb_logo.png
 
 [Argument]
 aisi_ad_script = switch, true, false, tag = 爱思去开屏广告
