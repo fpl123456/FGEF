@@ -13,10 +13,11 @@
 
 [Argument]
 555dy_script = switch, true, false, tag = 555电影
+aisi_ad = switch, true, false, tag = 爱思去开屏广告
 
 [Rewrite]
 # 爱思去除开屏广告
-^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject
+^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject  requires-body = true, tag = [广告拦截]爱思去开屏广告, enable={aisi_ad}
 
 # 555电影 - vip7.fzwdyy.cn, *.qyfxgd.cn, *.weilai555.com, *.ecoliving168.com
 ^https?:\/\/vip7\.fzwdyy\.cn:8083\/api\/(getAdvertInfo|getGOOGAdvert) reject-200
